@@ -6,7 +6,14 @@ require 'header.php';
         @media screen and (max-width: 1100px){.center{width:100%!important}.wrap{width:100%!important;margin:auto!important}}.center{width:50%!important}.bh{font-size:21px!important}ol{margin-right:1.5vw!important;font-size:15px!important}
     </style>
 
-    <h1 style="padding-top:1.5vw!important;"><span class="bh">Условия использования материалов сайта.</span></h1>
+
+<style>
+.popa {
+  font-size: var(--h1);
+  font-weight: var(--fw);
+}
+</style>
+    <h1 style="padding-top:1.5vw!important;"><span class="popa">Условия использования материалов сайта.</span></h1>
     <ol style="margin-right: 1.5vw;font-size: 15px;">
         <li>
             <p>
