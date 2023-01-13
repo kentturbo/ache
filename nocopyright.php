@@ -51,9 +51,12 @@ require 'header.php';
                 CP866, который использовался в ОС MS-DOS, а так же стал первым русскоязычным участником проекта
                 FreeBSD Core Team.
             </p></li>
+            <li>
+                <p>Музыка была взята с разрешения автора ютуб-канала https://www.youtube.com/@makisere8861/</p>
+            </li>
         <div></div>
     </ol>
     <div style="padding-bottom: 2vw!important;"><a href="index.php">назад.</a></div>
 <?php
 require 'footer.php';
-?>
+?>  
