@@ -2,12 +2,14 @@
 include 'header.php';
 ?>
 <h1><span class="bh"></span></h1>
-<div class="ns"><span class="hi"><span id="greeting"></span>, посетитель из <span id="user-city"></span> City</span></div>
-<span class="link">
-    <a id="z1" href=""></a> |
-    <a id="z2" onclick="make(event)" href=""></a> |
-    <a id="z3" href=""></a>
-</span>
+<div class="ns">
+    <span class="hi"> <span id="greeting"></span>, посетитель из <span id="user-city"></span> City</span><br>
+    <span class="link">
+        <a id="z1" href=""></a> |
+        <a id="z2" onclick="make(event)" href=""></a> |
+        <a id="z3" href=""></a>
+    </span></div>
+
 
 <img src="" alt="" class="img"> <br>
 <style>
@@ -20,7 +22,7 @@ include 'header.php';
     }
 </style>
 
-<i onclick="myFunction()" class=" dropbtn fa-solid fa-angle-down" style="padding-bottom:1rem;  transition: transform 0.5s ease"></i>
+<i onclick="myFunction()" class=" dropbtn fa-solid fa-angle-down" style="padding:1.5rem;  transition: transform 0.5s ease"></i>
 <div style="display:none; padding-top: 1rem;" class="dbc" id="dba">
     <div class="dtext">
         <!-- <a href="russian.html"><h5>"как же можно не любить всё русское?"</h5></a> -->
@@ -30,9 +32,9 @@ include 'header.php';
         </audio>
         <!-- Иконка воспроизведения -->
         <span class="pisa">
-        <a><i id="" class="fa-solid fa-circle-play"></i></a> |
-        <a><i id="playpausebtn" class="fa-solid fa-circle-play"></i></a> |
-        <a><i id="" class="fa-solid fa-circle-play"></i></a>
+            <a><img src="https://flagicons.lipis.dev/flags/4x3/ru.svg" style="width: 15px;border-radius: 2px;"></a> |
+            <a><i id="playpausebtn" class="fa-solid fa-circle-play"></i></a> |
+            <a><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" style="width: 15px;border-radius: 2px;"></a>
         </span>
 
         <a href="nocopyright.php">
