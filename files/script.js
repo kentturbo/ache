@@ -27,7 +27,7 @@ document.querySelector('.link > a:nth-child(3)').innerHTML = z3;
 document.querySelector('.link > a:nth-child(3)').setAttribute('href', l3);
 document.getElementsByClassName("img").src = gif; 
 document.querySelector('.img').setAttribute('src', gif);
-document.querySelector('audio > source').setAttribute('src', song);
+document.querySelector('audio').setAttribute('src', song);
 
 function make(event) {
   event.preventDefault();
@@ -76,16 +76,27 @@ function myFunction() {
     document.getElementById("dba").classList.toggle("show");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(dropevent) {
-    if (!dropevent.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dbc");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
+  
+  document.querySelector('.dropbtn').addEventListener('click', function() {
+    this.classList.toggle('rotated');
+  });
+
+// Получаем элементы
+const player = document.getElementById("player");
+const playpausebtn = document.getElementById("playpausebtn");
+
+// Обработчик клика по иконке
+playpausebtn.addEventListener("click", () => {
+    // Проверяем, проигрывается ли аудиофайл
+    if (player.paused) {
+        // Если не проигрывается, то запускаем воспроизведение
+        player.play();
+        // Меняем иконку на "паузу"
+        playpausebtn.className = "fa-solid fa-circle-pause";
+    } else {
+        // Если проигрывается, то останавливаем воспроизведение
+        player.pause();
+        // Меняем иконку на "плей"
+        playpausebtn.className = "fa-solid fa-circle-play";
     }
-  } 
+});

@@ -11,16 +11,30 @@ include 'header.php';
 
 <img src="" alt="" class="img"> <br>
 <style>
-    .show{display:block!important;}
+    .show {
+        display: block !important;
+    }
+
+    .rotated {
+        transform: rotate(180deg);
+    }
 </style>
 
-<i onclick="myFunction()" class=" dropbtn fa-solid fa-angle-down" style="padding-bottom:var(--1rem);"></i>
-<div style="display:none" class="dbc" id="dba">
+<i onclick="myFunction()" class=" dropbtn fa-solid fa-angle-down" style="padding-bottom:1rem;  transition: transform 0.5s ease"></i>
+<div style="display:none; padding-top: 1rem;" class="dbc" id="dba">
     <div class="dtext">
         <!-- <a href="russian.html"><h5>"как же можно не любить всё русское?"</h5></a> -->
-        <audio controls="" autoplay="autoplay">
-            <source src="" type="audio/mp3">
+        <style>
+        </style>
+        <audio src="" controls="" autoplay="autoplay" id="player" loop type="audio/mp3" style="display:none!important;">
         </audio>
+        <!-- Иконка воспроизведения -->
+        <span class="pisa">
+        <a><i id="" class="fa-solid fa-circle-play"></i></a> |
+        <a><i id="playpausebtn" class="fa-solid fa-circle-play"></i></a> |
+        <a><i id="" class="fa-solid fa-circle-play"></i></a>
+        </span>
+
         <a href="nocopyright.php">
             <h5>все права бессмысленны.</h5>
         </a>
