@@ -12,6 +12,7 @@ The idea for the site arose spontaneously, after viewing the site of Russian pro
 
 Before this project I knew nothing about js. It was originally written entirely in php and only then I rewrote and changed it (in fact rewrote).
 
+Reference: zachem.ne.jp
 
 
 ## Screenshots
