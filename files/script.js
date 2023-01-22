@@ -13,7 +13,7 @@ function $id(element){
   return document.getElementById(element);
 }
 
-let currentTime = new Date().getHours();
+let currentTime = new Date().getHours() +3;
 let change_theme = $("#z2");
 let dropbtn = $("#dropbtn");
 

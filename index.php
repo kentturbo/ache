@@ -38,9 +38,9 @@ include 'header.php';
         </span>
 
         <a href="nocopyright.php">
-            <h5>все права бессмысленны.</h5>
+            <h5 class="dtext" id="copyright">все права бессмысленны.</h5>
         </a>
     </div>
     <?php
     include 'footer.php';
-    ?>
+    ?>      

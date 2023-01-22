@@ -3,7 +3,7 @@ require 'header.php';
 ?>
 
     <style>
-        @media screen and (max-width: 1100px){.center{width:100%!important}.wrap{width:100%!important;margin:auto!important}}.center{width:50%!important}.bh{font-size:21px!important}ol{margin-right:1.5vw!important;font-size:15px!important}
+        @media screen and (max-width: 1100px){.center{width:100%!important}}.center{width:50%!important}.bh{font-size:21px!important}ol{margin-right:1.5vw!important;font-size:15px!important}
     </style>
 
 
@@ -11,6 +11,10 @@ require 'header.php';
 .popa {
   font-size: var(--h1);
   font-weight: var(--fw);
+}
+
+body{
+    margin-top: 3%;
 }
 </style>
     <h1 style="padding-top:1.5vw!important;"><span class="popa">Условия использования материалов сайта.</span></h1>
